@@ -35,11 +35,6 @@ public class ScoreManager : MonoBehaviour
             gameOver = true;
         }
 
-        if(transform.position.y >80 || transform.position.y > -51)
-        {
-            gameOver = true;
-        }
-
         if (gameOver)
         {
             if (won)
