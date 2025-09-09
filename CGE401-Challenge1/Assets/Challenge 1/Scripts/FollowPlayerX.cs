@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+		 * Maile Fidale
+		 * Follow Player X
+		 * Challenge 1
+		 * camera follows player while moving
+*/
+
 public class FollowPlayerX : MonoBehaviour
 {
     public GameObject plane;

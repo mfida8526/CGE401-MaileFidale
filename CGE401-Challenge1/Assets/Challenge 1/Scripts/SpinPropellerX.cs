@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+		 * Maile Fidale
+		 * Spin Propeller X
+		 * Challenge 1
+		 * spins plane's propeller
+*/
+
 public class SpinPropellerX : MonoBehaviour
 {
     public float rotationSpeed = 2000f;

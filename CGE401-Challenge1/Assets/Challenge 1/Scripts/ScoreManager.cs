@@ -4,6 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+/*
+		 * Maile Fidale
+		 * Score Manager
+		 * Challenge 1
+		 * keeps track of player score and determines when player wins or loses
+*/
+
 public class ScoreManager : MonoBehaviour
 {
     public static bool gameOver;

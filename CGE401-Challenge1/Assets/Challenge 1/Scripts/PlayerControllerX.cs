@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+		 * Maile Fidale
+		 * Player Controller X
+		 * Challenge 1
+		 * controls player movement, tilt up or down, move forward
+*/
+
 public class PlayerControllerX : MonoBehaviour
 {
     public float speed;

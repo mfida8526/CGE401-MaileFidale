@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+		 * Maile Fidale
+		 * Out of Bounds
+		 * Challenge 1
+		 * game over if player goes out of bounds
+*/
+
 public class OutOfBounds : MonoBehaviour
 {
     // Start is called before the first frame update
