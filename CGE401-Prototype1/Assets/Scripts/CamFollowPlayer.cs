@@ -2,6 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+		 * Maile Fidale
+		 * CamFollowPlayer
+		 * Prototype 1
+		 * camera follows player
+		 */
+
+
 public class CamFollowPlayer : MonoBehaviour
 {
     //drag the player onto this reference in the Inspector

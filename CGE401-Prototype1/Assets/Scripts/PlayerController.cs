@@ -2,6 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+		 * Maile Fidale
+		 * Player Controller
+		 * Prototype 1
+		 * controls player movement like forward, backward, how fast it moves, and how fast it turns
+		 */
+
+
 public class PlayerController : MonoBehaviour
 {
     public float speed;

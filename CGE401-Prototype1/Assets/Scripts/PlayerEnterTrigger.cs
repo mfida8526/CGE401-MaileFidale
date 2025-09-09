@@ -2,6 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+		 * Maile Fidale
+		 * Player Enter Trigger
+		 * Prototype 1
+		 * checks if player neters trigger zone
+		 */
+
+
 //attach this to the player
 public class PlayerEnterTrigger : MonoBehaviour
 {

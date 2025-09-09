@@ -4,6 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+/*
+		 * Maile Fidale
+		 * Score Manager
+		 * Prototype 1
+		 * keeps track of score
+		 */
+
 public class ScoreManager : MonoBehaviour
 {
     public static bool gameOver;
