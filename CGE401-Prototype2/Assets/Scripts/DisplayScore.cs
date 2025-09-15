@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//attach this script to a Text UI object
 public class DisplayScore : MonoBehaviour
 {
     public Text textbox;

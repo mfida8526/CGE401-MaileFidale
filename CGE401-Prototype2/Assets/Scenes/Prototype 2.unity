@@ -1612,11 +1612,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Food_Sandwich_01
       objectReference: {fileID: 0}
-    - target: {fileID: 792240705932300727, guid: 75b6003def48cda478e4de27841793ce,
-        type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
     - target: {fileID: 792240705932397975, guid: 75b6003def48cda478e4de27841793ce,
         type: 3}
       propertyPath: m_LocalPosition.x
