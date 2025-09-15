@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+		 * Maile Fidale
+		 * Player Controller
+		 * Prototype 2
+		 * player can move left and right
+*/
+
 public class PlayerController : MonoBehaviour
 {
     public float horizontalInput;

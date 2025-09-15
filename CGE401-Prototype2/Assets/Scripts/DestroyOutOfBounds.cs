@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+		 * Maile Fidale
+		 * Destroy Out of Bounds
+		 * Prototype 2
+		 * destroys game object that goes out of bounds
+*/
+
 public class DestroyOutOfBounds : MonoBehaviour
 {
     public float topBound = 20;

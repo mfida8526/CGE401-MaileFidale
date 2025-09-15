@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+		 * Maile Fidale
+		 * Shoot Prefab
+		 * Prototype 2
+		 * player can shoot projectiles prefab at target
+*/
+
 public class ShootPrefab : MonoBehaviour
 {
     public GameObject prefabToShoot;

@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+		 * Maile Fidale
+		 * Spawn Manager
+		 * Prototype 2
+		 * randomly respawns animal game objects in different x locations from top of screen
+*/
+
 //attach this to an empty game object
 
 public class SpawnManager : MonoBehaviour

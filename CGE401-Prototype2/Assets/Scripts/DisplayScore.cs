@@ -3,6 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/*
+		 * Maile Fidale
+		 * Display Score
+		 * Prototype 2
+		 * score displays on screen
+*/
+
 //attach this script to a Text UI object
 public class DisplayScore : MonoBehaviour
 {
