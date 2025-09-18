@@ -20,9 +20,16 @@ public class HealthSystem : MonoBehaviour
     void Update()
     {
         //If health is somehow more than max health, set health to max health
-        if (health > maxHealth)
+        if (health >= 5)
         {
-            health = maxHealth;
+            gameOver = true;
+            gameOverText.SetActive(true);
+
+            //Press R to restart if game is over
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+            }
         }
 
 
