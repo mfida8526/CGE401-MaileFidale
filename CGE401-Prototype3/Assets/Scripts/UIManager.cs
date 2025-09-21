@@ -57,7 +57,7 @@ public class UIManager : MonoBehaviour
 
         if(playerControllerScript.gameOver && Input.GetKeyDown(KeyCode.R))
         {
-            SceneManager.LoadScene(SceneManager.GetACtiveScene().name);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }
