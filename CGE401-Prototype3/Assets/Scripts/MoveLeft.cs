@@ -6,16 +6,22 @@ public class MoveLeft : MonoBehaviour
 {
     public float speed = 30f;
     private float leftBound = -15;
-    // Start is called before the first frame update
-    void Start()
+
+    private PlayerController playerControllerScript;
+
+    private void Start()
     {
-        
+        playerControllerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        transform.Translate(Vector3.left * Time.deltaTime * speed);
+        if (playerControllerScript.gameOver == false)
+        {
+            transform.Translate(Vector3.left * Time.deltaTime * speed);
+        }
+       
 
         //if we are out fo bounds to the left and the gameObject is an obstacle then destroy gameObject
         if (transform.position.x < leftBound && gameObject.CompareTag("Obstacle"))
