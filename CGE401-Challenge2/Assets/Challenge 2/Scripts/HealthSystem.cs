@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HealthSystem : MonoBehaviour
 {
@@ -20,16 +21,9 @@ public class HealthSystem : MonoBehaviour
     void Update()
     {
         //If health is somehow more than max health, set health to max health
-        if (health >= 5)
+        if (health > maxHealth)
         {
-            gameOver = true;
-            gameOverText.SetActive(true);
-
-            //Press R to restart if game is over
-            if (Input.GetKeyDown(KeyCode.R))
-            {
-                UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
-            }
+            health = maxHealth;
         }
 
 
@@ -64,7 +58,7 @@ public class HealthSystem : MonoBehaviour
             //Press R to restart if game is over
             if (Input.GetKeyDown(KeyCode.R))
             {
-                UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
         }
 
