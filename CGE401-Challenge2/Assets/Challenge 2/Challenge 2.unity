@@ -372,6 +372,85 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &230549355
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 230549356}
+  - component: {fileID: 230549358}
+  - component: {fileID: 230549357}
+  m_Layer: 5
+  m_Name: YouWinText
+  m_TagString: YouWinText
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &230549356
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230549355}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1490023136}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 14, y: -16}
+  m_SizeDelta: {x: 272.2716, y: 76.9974}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &230549357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230549355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'You win!
+
+    Press R to Restart!'
+--- !u!222 &230549358
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230549355}
+  m_CullTransparentMesh: 0
 --- !u!1 &258411857
 GameObject:
   m_ObjectHideFlags: 0
@@ -1479,7 +1558,7 @@ RectTransform:
   - {fileID: 2098127994}
   - {fileID: 1610156031}
   m_Father: {fileID: 1490023136}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1615,6 +1694,8 @@ MonoBehaviour:
   emptyHeart: {fileID: 21300002, guid: 582ddd945b86dca4287c9b1addf1114e, type: 3}
   gameOver: 0
   gameOverText: {fileID: 1930298700}
+  youWinText: {fileID: 230549355}
+  displayScore: {fileID: 888793691}
 --- !u!4 &1354459833
 Transform:
   m_ObjectHideFlags: 0
@@ -1721,6 +1802,7 @@ RectTransform:
   m_Children:
   - {fileID: 888793688}
   - {fileID: 1930298701}
+  - {fileID: 230549356}
   - {fileID: 1221429880}
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -2390,7 +2472,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Game over!
 
-    Press R to try again!'
+    Press R to try restart!'
 --- !u!222 &1930298703
 CanvasRenderer:
   m_ObjectHideFlags: 0

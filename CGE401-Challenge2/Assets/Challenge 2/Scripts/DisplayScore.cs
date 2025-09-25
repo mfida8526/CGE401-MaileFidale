@@ -19,7 +19,7 @@ public class DisplayScore : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         textbox.text = "Score: " + score;
     }

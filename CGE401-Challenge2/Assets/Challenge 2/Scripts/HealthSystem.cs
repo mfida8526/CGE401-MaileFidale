@@ -15,8 +15,13 @@ public class HealthSystem : MonoBehaviour
     public Sprite emptyHeart;
 
     public bool gameOver = false;
+    private bool won = false;
 
     public GameObject gameOverText;
+    public GameObject youWinText;
+
+    public DisplayScore displayScore;
+
 
     void Update()
     {
@@ -58,6 +63,24 @@ public class HealthSystem : MonoBehaviour
             //Press R to restart if game is over
             if (Input.GetKeyDown(KeyCode.R))
             {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+        }
+
+        if (displayScore.score >= 5)
+        {
+            won = true;
+        }
+
+        if (won)
+        {
+            gameOver = true;
+            youWinText.SetActive(true);
+
+            //if the game is over and they press R key on keyboard
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                //reload the current scene
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
         }
