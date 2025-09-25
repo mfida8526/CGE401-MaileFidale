@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+		 * Maile Fidale
+		 * SpawnManager
+		 * Challenge 2
+		 * randomly spawns 3 different balls between 3-5 second increments
+*/
+
 public class SpawnManagerX : MonoBehaviour
 {
     public GameObject[] ballPrefabs;

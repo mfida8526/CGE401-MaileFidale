@@ -3,6 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/*
+		 * Maile Fidale
+		 * DisplayScore
+		 * Challenge 2
+		 * displays score in UI, score increases by 1
+*/
+
 public class DisplayScore : MonoBehaviour
 {
     public Text textbox;

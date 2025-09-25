@@ -2,6 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+		 * Maile Fidale
+		 * PlayerControllerX
+		 * Challenge 2
+		 * player presses space key to spawn dog, cooldown time to prevent spamming of key
+*/
+
+
 public class PlayerControllerX : MonoBehaviour
 {
     public GameObject dogPrefab;

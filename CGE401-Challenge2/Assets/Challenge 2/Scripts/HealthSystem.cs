@@ -5,6 +5,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+/*
+		 * Maile Fidale
+		 * HealthSystem
+		 * Challenge 2
+		 * player loses hearts if ball goes out of bounds, wins if scores 5
+*/
+
 public class HealthSystem : MonoBehaviour
 {
     public int health;
