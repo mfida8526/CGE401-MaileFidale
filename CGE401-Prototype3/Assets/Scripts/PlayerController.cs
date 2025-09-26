@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+* Maile Fidale
+* PlayerController
+* Prototype 3
+* player movement, animation, music, and sound effects
+*/
+
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody rb;

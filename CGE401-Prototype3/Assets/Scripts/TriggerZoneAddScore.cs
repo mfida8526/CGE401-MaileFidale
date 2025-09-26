@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+* Maile Fidale
+* TriggerZoneAddScore
+* Prototype 3
+* adds 1 to score when player collides with trigger zone
+*/
+
 public class TriggerZoneAddScore : MonoBehaviour
 {
     private UIManager uIManager;

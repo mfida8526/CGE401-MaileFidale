@@ -4,6 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+/*
+* Maile Fidale
+* UIManager
+* Prototype 3
+* game over if player collides with obstacle, wins if scores 10 points, updates UI score
+*/
+
 public class UIManager : MonoBehaviour
 {
     public Text scoreText;

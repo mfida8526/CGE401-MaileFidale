@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+* Maile Fidale
+* Spawn Manager
+* Prototype 3
+* spawns obstacle every 2 seconds
+*/
+
 public class SpawnManager : MonoBehaviour
 {
     public GameObject obstaclePrefab;

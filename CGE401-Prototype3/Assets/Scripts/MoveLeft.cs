@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+* Maile Fidale
+* MoveLeft
+* Prototype 3
+* obstacle moves left
+*/
+
 public class MoveLeft : MonoBehaviour
 {
     public float speed = 30f;

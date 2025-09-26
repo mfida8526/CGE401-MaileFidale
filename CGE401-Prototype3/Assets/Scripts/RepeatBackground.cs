@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+* Maile Fidale
+* Repeat Background
+* Prototype 3
+* background resets position so it looks like it's looping
+*/
+
 public class RepeatBackground : MonoBehaviour
 {
     private Vector3 startPosition;
