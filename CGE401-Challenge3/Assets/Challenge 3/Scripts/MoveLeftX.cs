@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+* Maile Fidale
+* Move Left
+* Challenge 3
+* spawned objects move left
+*/
+
 public class MoveLeftX : MonoBehaviour
 {
     public float speed;

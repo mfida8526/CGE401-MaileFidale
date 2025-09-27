@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+* Maile Fidale
+* Spawn Manager
+* Challenge 3
+* Spawns money and bomb randomly
+*/
+
 public class SpawnManagerX : MonoBehaviour
 {
     public GameObject[] objectPrefabs;

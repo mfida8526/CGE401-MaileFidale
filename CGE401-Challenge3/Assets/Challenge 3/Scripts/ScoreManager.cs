@@ -4,6 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+/*
+* Maile Fidale
+* Score Manager
+* Challenge 3
+* displays score, adds 1 to score when player collides with money, game over if collides with bomb, wins if score = 10, press r key to restart
+*/
+
 public class ScoreManager : MonoBehaviour
 {
     public Text scoreText;

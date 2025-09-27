@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+* Maile Fidale
+* Repeat Background
+* Challenge 3
+* background loops
+*/
+
 public class RepeatBackgroundX : MonoBehaviour
 {
     private Vector3 startPos;

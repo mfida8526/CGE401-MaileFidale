@@ -3,6 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/*
+* Maile Fidale
+* Player Controller X
+* Challenge 3
+* player movement, animations, collisions, and sound effects
+*/
+
 public class PlayerControllerX : MonoBehaviour
 {
     public bool gameOver;
