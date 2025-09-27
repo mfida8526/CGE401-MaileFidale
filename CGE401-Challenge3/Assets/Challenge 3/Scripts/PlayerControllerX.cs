@@ -19,7 +19,7 @@ public class PlayerControllerX : MonoBehaviour
     public AudioClip explodeSound;
     public AudioClip bounceSound;
 
-    public float maxHeight = 15f; // balloon max height
+    public bool isLowEnough;
 
     public ScoreManager scoreManager;
 
@@ -39,9 +39,14 @@ public class PlayerControllerX : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
-        // Check if the player is below the max height
-        bool isLowEnough = transform.position.y < maxHeight;
+        if (transform.position.y > 13)
+        {
+            isLowEnough = false;
+        }
+        else
+        {
+            isLowEnough = true;
+        }
 
         // While space is pressed and player is low enough, float up
         if (Input.GetKey(KeyCode.Space) && !gameOver && isLowEnough)
@@ -71,7 +76,7 @@ public class PlayerControllerX : MonoBehaviour
             scoreManager.AddScore(1);
         }
         //ground bounce
-        else if (other.gameObject.CompareTag("Ground"))
+        else if (other.gameObject.CompareTag("Ground") && !gameOver)
         {
             // Apply a small upward bounce force
             playerRb.AddForce(Vector3.up * 5f, ForceMode.Impulse);

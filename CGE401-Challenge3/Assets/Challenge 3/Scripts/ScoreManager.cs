@@ -52,7 +52,7 @@ public class ScoreManager : MonoBehaviour
 
         if (playerControllerXScript.gameOver)
         {
-            gameOverText.gameObject.SetActive(true);
+            gameOverText.gameObject.SetActive(true); 
         }
 
         if (playerControllerXScript.gameOver && Input.GetKeyDown(KeyCode.R))

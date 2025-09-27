@@ -1080,7 +1080,6 @@ GameObject:
   - component: {fileID: 1777763616}
   - component: {fileID: 1777763619}
   - component: {fileID: 1777763618}
-  - component: {fileID: 1777763617}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -1107,23 +1106,6 @@ RectTransform:
   m_AnchoredPosition: {x: 305, y: 186}
   m_SizeDelta: {x: 189.29541, y: 61.958694}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1777763617
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1777763615}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 755882a8b45baef4082653c308093703, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 1777763618}
-  gameOverText: {fileID: 1812471690}
-  score: 0
-  playerControllerXScript: {fileID: 2022979843}
-  won: 0
 --- !u!114 &1777763618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1276,7 +1258,7 @@ MonoBehaviour:
   moneySound: {fileID: 8300000, guid: af9f934eb4288464eb120a5857921cc3, type: 3}
   explodeSound: {fileID: 8300000, guid: 774ebc5c074ce4695b7cc310fbd44087, type: 3}
   bounceSound: {fileID: 8300000, guid: ccb9b31174a3a43709a113a9c7cf4252, type: 3}
-  maxHeight: 10
+  isLowEnough: 0
   scoreManager: {fileID: 833438911}
 --- !u!1001 &2097113909
 PrefabInstance:
