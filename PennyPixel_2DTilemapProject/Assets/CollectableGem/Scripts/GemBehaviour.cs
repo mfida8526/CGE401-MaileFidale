@@ -11,16 +11,21 @@ public class GemBehaviour : MonoBehaviour
 
 	private float durationOfCollectedParticleSystem;
 
+	public DisplayScore displayScore;
+
 
 	void Start()
 	{
 		durationOfCollectedParticleSystem = collectedParticleSystem.GetComponent<ParticleSystem>().main.duration;
+		if (displayScore == null)
+			displayScore = FindObjectOfType<DisplayScore>();
 	}
 
 	void OnTriggerEnter2D(Collider2D theCollider)
 	{
 		if (theCollider.CompareTag ("Player")) {
 			GemCollected ();
+			displayScore.score++;
 		}
 	}
 
