@@ -14,20 +14,21 @@ public class EndGame : MonoBehaviour
 
     void Start()
     {
-        gameOver = false;
+        // Hide game over text at start
+        if (gameOverText != null)
+            gameOverText.SetActive(false);
+
+        if (displayScore == null)
+            displayScore = FindObjectOfType<DisplayScore>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Collided with: " + collision.name);
-
         if (!gameOver && collision.CompareTag("Player"))
         {
-            Debug.Log("Player entered end zone, score: " + displayScore.score);
-
             if (displayScore.score >= requiredScore)
             {
-                gameOver = true;
+                GameOver();
             }
             else
             {
@@ -42,6 +43,18 @@ public class EndGame : MonoBehaviour
         {
             RestartLevel();
         }
+    }
+
+    void GameOver()
+    {
+        gameOver = true;
+
+        // Show game over text
+        if (gameOverText != null)
+            gameOverText.SetActive(true);
+
+        // Optional: disable player movement here if you want
+        Debug.Log("You Win! Press R to Restart.");
     }
 
     void RestartLevel()
