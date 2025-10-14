@@ -12,15 +12,10 @@ public class EndGame : MonoBehaviour
 
     private bool gameOver = false;
 
-   /* void Start()
+    void Start()
     {
-        // Hide game over text at start
-        if (gameOverText != null)
-            gameOverText.SetActive(false);
-
-        if (displayScore == null)
-            displayScore = FindObjectOfType<DisplayScore>();
-    }*/
+        gameOver = false;
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -32,7 +27,7 @@ public class EndGame : MonoBehaviour
 
             if (displayScore.score >= requiredScore)
             {
-                GameOver();
+                gameOver = true;
             }
             else
             {
@@ -47,17 +42,6 @@ public class EndGame : MonoBehaviour
         {
             RestartLevel();
         }
-    }
-
-    void GameOver()
-    {
-        gameOver = true;
-
-        // Show game over text
-        //if (gameOverText != null)
-        //    gameOverText.SetActive(true);
-
-        Debug.Log("You Win! Press R to Restart.");
     }
 
     void RestartLevel()
