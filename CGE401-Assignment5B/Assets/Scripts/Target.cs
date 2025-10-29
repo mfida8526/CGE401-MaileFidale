@@ -6,6 +6,8 @@ public class Target : MonoBehaviour
 {
     public float health = 50f;
 
+    public DisplayScore displayScore;
+
     public void TakeDamage(float amount)
     {
         health -= amount;
@@ -18,6 +20,7 @@ public class Target : MonoBehaviour
     void Die()
     {
         Destroy(gameObject);
+        displayScore.score++;
     }
     // Start is called before the first frame update
     void Start()
