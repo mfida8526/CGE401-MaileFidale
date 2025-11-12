@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/PolygonStarter/Scenes/MainMenu.unity
+    guid: f179a1a45f4b04e4da47e43675b23838
+  - enabled: 1
     path: Assets/PolygonStarter/Scenes/Demo.unity
     guid: 5215016c20f88ea498985ac3e0ab4f9d
+  - enabled: 1
+    path: Assets/PolygonStarter/Scenes/Level1.unity
+    guid: 4a59f01f363e2c646927c7fc6d3c0510
+  - enabled: 1
+    path: Assets/PolygonStarter/Scenes/Level2.unity
+    guid: 6f3c734c7e038a34c9c556740a232473
+  - enabled: 1
+    path: Assets/PolygonStarter/Scenes/Level3.unity
+    guid: 472527fe033e42644b643a1302947041
   m_configObjects: {}

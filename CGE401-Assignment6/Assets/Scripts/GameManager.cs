@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager: MonoBehaviour
+public class GameManager: Singleton<GameManager>
 {
     public int score;
 
     //variable to keep track of what level we're on
-    private string CurrentLevelName = string.Empty;
+    private string currentLevelName = string.Empty;
 
-    #region This code makes this class a Singleton
+/*    #region This code makes this class a Singleton
     public static GameManager instance;
 
     private void Awake()
@@ -24,11 +24,12 @@ public class GameManager: MonoBehaviour
         else
         {
             Destroy(gameObject);
-            Debug.Log("Trying to instantiate a sescond" +
+            Debug.LogError("Trying to instantiate a sescond" +
                     "instance of singleton Game Manager");
         }
     }
     #endregion
+*/
 
     //methods to load and unload scenes
     public void LoadLevel(string levelName)
@@ -36,10 +37,10 @@ public class GameManager: MonoBehaviour
         AsyncOperation ao = SceneManager.LoadSceneAsync(levelName, LoadSceneMode.Additive);
         if(ao == null)
         {
-            Debug.LogError("[GameManager] unable to load level" + levelName);
+            Debug.LogError("[GameManager] unable to load level " + levelName);
             return;
         }
-        CurrentLevelName = levelName;
+        currentLevelName = levelName;
     }
 
     public void UnloadLevel(string levelName)
