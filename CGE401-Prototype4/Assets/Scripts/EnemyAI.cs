@@ -16,7 +16,7 @@ public class EnemyAI : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void FixedUpdate()
     {
         //add force toward the direction from the player to the enemy
 
@@ -25,5 +25,10 @@ public class EnemyAI : MonoBehaviour
 
         //add force toward player
         enemyRb.AddForce(lookDirection * speed);
+
+        if (transform.position.y < -10)
+        {
+            Destroy(gameObject);
+        }
     }
 }
