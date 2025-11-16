@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+    * Maile Fidale
+    * Assignment 6
+    * Follow along script from video
+*/
 public class Weapon : MonoBehaviour
 {
     public int damageBonus;

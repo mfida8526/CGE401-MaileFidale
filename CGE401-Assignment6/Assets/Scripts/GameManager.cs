@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/*
+    * Maile Fidale
+    * Assignment 6
+    * Main Menu and Pause Menu, Scene Management
+*/
+
 public class GameManager: Singleton<GameManager>
 {
     public int score;

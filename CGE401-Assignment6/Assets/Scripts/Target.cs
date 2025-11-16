@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+    * Maile Fidale
+    * Assignment 6
+    * Coin target
+*/
 public class Target : MonoBehaviour
 {
     public float health = 50f;

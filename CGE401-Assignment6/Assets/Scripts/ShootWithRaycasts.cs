@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+    * Maile Fidale
+    * Assignment 6
+    * Uses raycasts to shoot target
+*/
 public class ShootWithRaycasts : MonoBehaviour
 {
     public float damage = 10f;

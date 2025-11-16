@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+    * Maile Fidale
+    * Assignment 6
+    * Allows player to switch weapons
+*/
 public class WeaponSwitcher : MonoBehaviour
 {
     public Weapons[] weapons;

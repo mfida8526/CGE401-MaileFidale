@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/*
+    * Maile Fidale
+    * Assignment 6
+    * Game over requirements
+*/
+
 public class EndGame : MonoBehaviour
 {
     public DisplayScore displayScore;       // Assign in Inspector or find at runtime

@@ -2,6 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+    * Maile Fidale
+    * Assignment 6
+    * Singleton template
+*/
+
 public class Singleton<T> : MonoBehaviour where T : Singleton<T>
 {
     private static T instance;

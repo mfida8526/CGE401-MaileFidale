@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+    * Maile Fidale
+    * Assignment 6
+    * Reads other weapon scripts
+*/
 public abstract class Weapons : MonoBehaviour, IWeapon
 {
     [SerializeField] protected string weaponName;
