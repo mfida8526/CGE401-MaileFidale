@@ -7,12 +7,16 @@ public class EnemyAI : MonoBehaviour
     private Rigidbody enemyRb;
     public GameObject player;
     public float speed = 3.0f;
+
+    public DisplayScore displayScore;
     
     // Start is called before the first frame update
     void Start()
     {
         enemyRb = GetComponent<Rigidbody>();
         player = GameObject.FindGameObjectWithTag("Player");
+
+        displayScore = FindObjectOfType<DisplayScore>();
     }
 
     // Update is called once per frame
@@ -28,6 +32,7 @@ public class EnemyAI : MonoBehaviour
 
         if (transform.position.y < -10)
         {
+            displayScore.score++;
             Destroy(gameObject);
         }
     }

@@ -15,7 +15,7 @@ public class SpawnManager : MonoBehaviour
     void Start()
     {
         SpawnEnemyWave(waveNumber);
-        SpawnPowerup();
+        SpawnPowerup(1);
     }
 
     private void SpawnEnemyWave(int enemiesToSpawn)
