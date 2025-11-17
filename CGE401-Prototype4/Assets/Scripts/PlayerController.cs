@@ -16,9 +16,14 @@ public class PlayerController : MonoBehaviour
 
     public GameObject powerupIndicator;
 
+    private GameManager gameManager;
+
     // Start is called before the first frame update
     void Start()
     {
+        // Get reference to the GameManager
+        gameManager = FindObjectOfType<GameManager>();
+
         playerRb = GetComponent<Rigidbody>();
         focalPoint = GameObject.FindGameObjectWithTag("FocalPoint");
     }
@@ -30,6 +35,12 @@ public class PlayerController : MonoBehaviour
 
         //move our powerup indicator to the ground below our player
         powerupIndicator.transform.position = transform.position + new Vector3(0, -0.5f, 0);
+
+        // Check if player fell off the platform
+        if (transform.position.y < -10f && gameManager != null)
+        {
+            gameManager.EndGame();
+        }
     }
 
     private void FixedUpdate()

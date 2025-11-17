@@ -224,7 +224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0c40d14e4002b347a09d146b9414750, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 8
   hasPowerup: 0
   powerupIndicator: {fileID: 620415328}
 --- !u!54 &173352528
@@ -550,6 +550,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textbox: {fileID: 0}
   score: 0
+--- !u!1 &546515489
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 546515491}
+  - component: {fileID: 546515490}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &546515490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546515489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc25242c988bb894eb4665351d4f6ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  youLoseText: {fileID: 92316718}
+  youWinText: {fileID: 1603330928}
+  isGameOver: 0
+--- !u!4 &546515491
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546515489}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 190.75589, y: 160.22821, z: -7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &620415328 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1742899641471652, guid: 923deea38dc6a8843b15db7638919c1e,
@@ -1122,6 +1168,7 @@ MonoBehaviour:
     type: 3}
   enemyCount: 0
   waveNumber: 1
+  maxWaves: 10
 --- !u!4 &2095699592
 Transform:
   m_ObjectHideFlags: 0

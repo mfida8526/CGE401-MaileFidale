@@ -10,10 +10,15 @@ public class SpawnManager : MonoBehaviour
 
     public int enemyCount;
     public int waveNumber = 1;
+    public int maxWaves = 10;  // total waves in the game
+
+    private GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
     {
+        gameManager = FindObjectOfType<GameManager>(); // get reference to GameManager
+
         SpawnEnemyWave(waveNumber);
         SpawnPowerup(1);
     }
@@ -50,7 +55,17 @@ public class SpawnManager : MonoBehaviour
     {
         enemyCount = GameObject.FindGameObjectsWithTag("Enemy").Length;
 
-        if(enemyCount == 0)
+        // Check if player has completed the final wave
+        if (waveNumber > maxWaves)
+        {
+            if (gameManager != null)
+            {
+                gameManager.WinGame();  // trigger win
+            }
+            return; // stop spawning new waves
+        }
+
+        if (enemyCount == 0)
         {
             waveNumber++;
             SpawnEnemyWave(waveNumber);
