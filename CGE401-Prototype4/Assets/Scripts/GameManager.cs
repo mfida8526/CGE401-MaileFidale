@@ -7,18 +7,28 @@ public class GameManager : MonoBehaviour
 {
     public GameObject youLoseText;
     public GameObject youWinText;
+    public GameObject startText;
 
     public bool isGameOver = false;
 
     void Start()
     {
+        startText.SetActive(true);
         youLoseText.SetActive(false);
         youWinText.SetActive(false);
-        Time.timeScale = 1f;
+        Time.timeScale = 0f;
     }
 
     void Update()
     {
+        // Wait for SPACE to start game
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+
+            startText.SetActive(false);
+            Time.timeScale = 1f;
+        }
+
         if (isGameOver && Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
