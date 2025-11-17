@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Maile Fidale
+ * Challenge 4
+ * Enemy movement and collisions
+*/
+
 public class EnemyX : MonoBehaviour
 {
     public float speed;

@@ -4,6 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+/*
+ * Maile Fidale
+ * Challenge 4
+ * Manages score and text
+*/
+
 public class GameManager : MonoBehaviour
 {
     public int currentWave = 1;

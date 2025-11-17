@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Maile Fidale
+ * Challenge 4
+ * Manages soccer ball spawning
+*/
+
 public class SpawnManagerX : MonoBehaviour
 {
     public GameObject enemyPrefab;
