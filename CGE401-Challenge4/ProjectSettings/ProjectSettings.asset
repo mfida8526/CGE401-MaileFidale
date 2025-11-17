@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 18
-  productGUID: 00000000000000000000000000000000
+  productGUID: 6ee136662658ae449865f3c8de1936b3
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -636,7 +636,7 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   cloudProjectId: 31f14e9e-3461-4d56-8381-ded27405cbdd
   framebufferDepthMemorylessMode: 0
-  projectName: 
+  projectName: CGE401-Challenge4
   organizationId: mfida
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0

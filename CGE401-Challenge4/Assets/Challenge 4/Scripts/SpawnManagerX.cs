@@ -18,6 +18,8 @@ public class SpawnManagerX : MonoBehaviour
 
     public float enemySpeed = 50;
 
+    public GameManager gameManager;
+
     // Update is called once per frame
     void Update()
     {
@@ -54,6 +56,8 @@ public class SpawnManagerX : MonoBehaviour
         {
             Instantiate(enemyPrefab, GenerateSpawnPosition(), enemyPrefab.transform.rotation);
         }
+
+        gameManager.NextWave();
 
         waveCount++;
         enemyCount += 25;

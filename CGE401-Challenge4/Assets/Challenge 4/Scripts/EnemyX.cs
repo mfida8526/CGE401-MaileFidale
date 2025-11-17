@@ -9,10 +9,13 @@ public class EnemyX : MonoBehaviour
     private GameObject playerGoal;
 
     private SpawnManagerX spawnManagerX;
+    private GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
     {
+        gameManager = FindObjectOfType<GameManager>();
+
         enemyRb = GetComponent<Rigidbody>();
 
         playerGoal = GameObject.Find("Player Goal");
@@ -32,6 +35,8 @@ public class EnemyX : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
+
+
         // If enemy collides with either goal, destroy it
         if (other.gameObject.name == "Enemy Goal")
         {
@@ -40,6 +45,11 @@ public class EnemyX : MonoBehaviour
         else if (other.gameObject.name == "Player Goal")
         {
             Destroy(gameObject);
+
+            if (gameManager != null)
+            {
+                gameManager.LoseGame();
+            }
         }
 
     }
