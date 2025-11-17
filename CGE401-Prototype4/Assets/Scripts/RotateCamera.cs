@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Maile Fidale
+ * Prototype 4
+ * Camera movement
+*/
+
 public class RotateCamera : MonoBehaviour
 {
     public float rotationSpeed;

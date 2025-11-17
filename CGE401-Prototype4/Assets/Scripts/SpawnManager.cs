@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Maile Fidale
+ * Prototype 4
+ * Manages ball and powerup spawning
+*/
+
 public class SpawnManager : MonoBehaviour
 {
     public GameObject enemyPrefab;

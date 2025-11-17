@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Maile Fidale
+ * Prototype 4
+ * Player movement and collisions
+*/
+
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody playerRb;

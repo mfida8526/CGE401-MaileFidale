@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Maile Fidale
+ * Prototype 4
+ * Enemy movement
+*/
+
 public class EnemyAI : MonoBehaviour
 {
     private Rigidbody enemyRb;

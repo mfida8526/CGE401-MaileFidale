@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/*
+ * Maile Fidale
+ * Prototype 4
+ * Displays and keeps track of score
+*/
+
 public class DisplayScore : MonoBehaviour
 {
     public Text textbox;

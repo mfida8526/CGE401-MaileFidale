@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/*
+ * Maile Fidale
+ * Prototype 4
+ * Manages score and text
+*/
+
 public class GameManager : MonoBehaviour
 {
     public GameObject youLoseText;
