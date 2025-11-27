@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/*
+    * Maile Fidale
+    * Challenge 5
+    * difficulty change for buttons
+*/
+
 public class DifficultyButtonX : MonoBehaviour
 {
     private Button button;
@@ -23,7 +29,7 @@ public class DifficultyButtonX : MonoBehaviour
     void SetDifficulty()
     {
         Debug.Log(button.gameObject.name + " was clicked");
-        gameManagerX.StartGame();
+        gameManagerX.StartGame(difficulty);
     }
 
 

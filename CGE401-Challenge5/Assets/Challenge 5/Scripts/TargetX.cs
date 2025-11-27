@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+    * Maile Fidale
+    * Challenge 5
+    * spawning, particles, object points
+*/
+
 public class TargetX : MonoBehaviour
 {
     private Rigidbody rb;
@@ -27,7 +33,7 @@ public class TargetX : MonoBehaviour
     }
 
     // When target is clicked, destroy it, update score, and generate explosion
-    private void OnMouseEnter()
+    private void OnMouseDown()
     {
         if (gameManagerX.isGameActive)
         {
