@@ -13,6 +13,10 @@ public class Target : MonoBehaviour
 
     private GameManager gameManager;
 
+    public int pointValue;
+
+    public ParticleSystem explosionParticle;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,13 +52,23 @@ public class Target : MonoBehaviour
 
     private void OnMouseDown()
     {
-        gameManager.UpdateScore(5);
-        Destroy(gameObject);
+        if(gameManager.isGameActive)
+        {
+            gameManager.UpdateScore(pointValue);
+
+            Instantiate(explosionParticle, transform.position, explosionParticle.transform.rotation);
+
+            Destroy(gameObject);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);
+        if (!gameObject.CompareTag("Bad"))
+        {
+            gameManager.GameOver();
+        }
     }
 
     // Update is called once per frame
