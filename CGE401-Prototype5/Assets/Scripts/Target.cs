@@ -11,6 +11,8 @@ public class Target : MonoBehaviour
     private float xRange = 4;
     private float ySpawnPos = -6;
 
+    private GameManager gameManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +26,9 @@ public class Target : MonoBehaviour
 
         //add the position with a randomized X value
         transform.position = RandomSpawnPos();
+
+        //set reference to game manager
+        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
 
     private Vector3 RandomSpawnPos()
@@ -39,6 +44,17 @@ public class Target : MonoBehaviour
     private Vector3 RandomForce()
     {
         return Vector3.up * Random.Range(minSpeed, maxSpeed);
+    }
+
+    private void OnMouseDown()
+    {
+        gameManager.UpdateScore(5);
+        Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Destroy(gameObject);
     }
 
     // Update is called once per frame
