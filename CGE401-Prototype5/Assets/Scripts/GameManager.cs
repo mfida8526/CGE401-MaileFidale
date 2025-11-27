@@ -5,6 +5,12 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+/*
+    * Maile Fidale
+    * Prototype 5
+    * Handles win/ lose conditions, spawning, title screen, difficulty, and restarting
+*/
+
 public class GameManager : MonoBehaviour
 {
     public List<GameObject> targets;
@@ -20,6 +26,18 @@ public class GameManager : MonoBehaviour
 
     public Button restartButton;
 
+    public GameObject titleScreen;
+
+    public void StartGame(int difficulty)
+    {
+        spawnRate /= difficulty;
+        isGameActive = true;
+        StartCoroutine(SpawnTarget());
+        score = 0;
+        UpdateScore(0);
+        titleScreen.gameObject.SetActive(false);
+    }
+
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -28,10 +46,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        isGameActive = true;
-        StartCoroutine(SpawnTarget());
-        score = 0;
-        UpdateScore(0);
+
     }
 
     public void GameOver()

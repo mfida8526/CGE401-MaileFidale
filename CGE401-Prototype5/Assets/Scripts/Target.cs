@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+    * Maile Fidale
+    * Prototype 5
+    * object movement
+*/
+
 public class Target : MonoBehaviour
 {
     private Rigidbody targetRb;
