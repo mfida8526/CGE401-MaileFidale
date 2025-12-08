@@ -5,7 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/FinishedScenes/Finished01.unity
     guid: 2d205ff273793504096ece3c9634d72d
+  - enabled: 0
+    path: Assets/FinishedScenes/Finished02.unity
+    guid: 41fcc5b3360d6f545a062ab3d0ab01a2
+  - enabled: 0
+    path: Assets/FinishedScenes/Finished03.unity
+    guid: 5d1513555aeb55d429f74ab541e0b2c9
+  - enabled: 0
+    path: Assets/FinishedScenes/Finished04.unity
+    guid: 08fd3d698d7b87a4d99a953b360356f8
+  - enabled: 0
+    path: Assets/FinishedScenes/Finished05.unity
+    guid: 67199c6d5992d3b49be1ad0e19cd12d8
+  - enabled: 1
+    path: Assets/FinishedScenes/Finished06.unity
+    guid: 2c533a20bcdb1ca4da03c0fd066bee0e
   m_configObjects: {}
