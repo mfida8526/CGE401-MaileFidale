@@ -3,6 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+/*
+* Maile Fidale
+* MoveToClickPoint
+* Assignment 9
+* player moves to location of where mouse is clicked
+*/
+
 public class MoveToClickPoint : MonoBehaviour
 {
     public Camera cam;

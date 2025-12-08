@@ -4,6 +4,13 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityStandardAssets.Characters.ThirdPerson;
 
+/*
+* Maile Fidale
+* EnemyAI
+* Assignment 9
+* enemy movement
+*/
+
 public class EnemyAI : MonoBehaviour
 {
     public Camera cam;

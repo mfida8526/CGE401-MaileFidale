@@ -4,6 +4,13 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityStandardAssets.Characters.ThirdPerson;
 
+/*
+* Maile Fidale
+* PlayerController
+* Assignment 9
+* player movement
+*/
+
 public class PlayerController : MonoBehaviour
 {
     public Camera cam;

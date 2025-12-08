@@ -3,6 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+/*
+* Maile Fidale
+* MoveTo
+* Assignment 9
+* player moves to target destination
+*/
+
 public class MoveTo : MonoBehaviour
 {
 
